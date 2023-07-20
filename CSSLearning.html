@@ -9,26 +9,91 @@
             color: orange;
         }
         h3{
-            color: cadetblue;
+            color: green;
         }
         #Summary{
-            color: chocolate;
+            color: rgb(45, 65, 100);
         }
-        #sp{
-            color:red;
+        span{
+            color: #a00e0e;
+        }
+        #li1, #li2, .animals{
+            color: blueviolet;
+            font-weight: bolder;
+            font-size: larger;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        .fruits{
+            color: cadetblue;
+        }
+        .para{
+            color: #000000;
+            font-size: x-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            /*text-decoration: underline;*/
+            /*text-shadow: 4px 4px 2px rgba(0,0,0,0.6);*/
+        }
+        .listAnimals{
+            border: 2px solid red;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .lorem{
+            color: #678345;
+            font-size: larger;
+            text-decoration: underline;
+        }
+        .education{
+            border: 2px dotted rgb(83,62,62);
+            padding-top: 30px;
+            padding-left: 50px;
+            padding-bottom: 60px;
+            padding-right: 100px;
+            /*padding: 30px 100px 60px 50px;*/      /*for top right bottom right same value*/
+            /*padding: 30px 100px;*/                /*for top & bottom one value and right & left one value*/
+            /*padding: 50px;*/                      /*for top right bottom right same value*/
+            margin-top: 100px;
+            margin-right: 30px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            /*margin: 100px 50px;*/                 /*for top & bottom one value and right & left one value*/
+            /*margin: 100px 30px 100px 50px;*/      /*for top right bottom right same value*/
+        }
+        .Office{
+            border: 2px solid orange;
         }
     </style>
 </head>
 <body>
     <h2 style="color: brown; text-transform: uppercase; text-decoration: underline; font-style: italic;">My Personal Details</h2>
     <p style="color: orange; font-weight: bolder; font-size: larger;">Lorem ipsum dolor sit amet.</p>
+    
     <h3 id="Summary">My Professional Summary</h3>
     <ul>
         <li>Lorem, ipsum dolor.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit.</li>
+        <li id="li1">Lorem ipsum dolor sit amet.</li>
+        <li id="li2">Lorem ipsum dolor sit.</li>
         <li>Lorem, ipsum dolor.</li>
     </ul>
-    <h3>My <span id="sp"> permanant </span> address</h3>
+    <h3>My <span> permanant </span> address</h3>
+    <h4>List of fruits</h4>
+    <ol>
+        <li>apple</li>
+        <li class="fruits">mango</li>
+        <li class="fruits">water melon</li>
+        <li>grapes</li>
+    </ol>
+    <h4 class="listAnimals">List of animals</h4>
+    <ol>
+        <li class="animals">cat</li>
+        <li class="animals">elephant</li>
+    </ol>  
+    <p class="para"><span class="lorem">Lorem, ipsum dolor</span> sit amet consectetur adipisicing elit. Quas, consequuntur.</p>
+    <p class="education">My Education Details</p>
+    <h3 class="Office">My Office adddress</h3>
 </body>
 </html>
