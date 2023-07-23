@@ -8,6 +8,7 @@
     <style>
         header{
             background-color: azure;
+            padding: 10px;
             color: orange
         }
         .headerContent{
@@ -16,46 +17,50 @@
             margin-left: 3px;
         }
         .link{
-            margin-right: 30px;
+            text-transform: uppercase;
+        }
+        a{
             text-decoration: none;
-        }
-        span{
-            margin-right: 20px;
-        }
-        .icon{
-            margin-right: 30px;
         }
         footer{
             background-color: rgb(238, 226, 226);
-            padding: 20px;
+            padding: 10px;
+        }
+        ul li{
+            display: inline-block;
+            margin-right: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-    <i class="fa fa-user" aria-hidden="true"></i><span class="headerContent"> Gayatri Kulkarni </span>
-    <i class="fa fa-phone-square" aria-hidden="true"></i><span class="headerContent"> 9876 5432 10 </span> 
-    <i class="fa fa-envelope" aria-hidden="true"></i><span class="headerContent"> zyx@gmail.com </span> 
-    <a href="assets/animation.pdf"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a> <span class="headerContent">Download Resume</span>
-    <br><br>
+        <i class="fa fa-user" aria-hidden="true"></i><span class="headerContent"> Gayatri Kulkarni </span>
+        <i class="fa fa-phone-square" aria-hidden="true"></i><span class="headerContent"> 9876 5432 10 </span> 
+        <i class="fa fa-envelope" aria-hidden="true"></i><span class="headerContent"> zyx@gmail.com </span> 
+        <a href="assets/animation.pdf"><i class="fa fa-lg fa-download" aria-hidden="true"></i></a> <span class="headerContent">Download Resume</span>
+        <br>
     </header>
     <nav>
-    <a href="home.html" target="myFrame" class="link">Home</a>
-    <a href="techStack.html" target="myFrame" class="link">Techstack</a>
-    <a href="projectDetails.html" target="myFrame" class="link">Project</a>
-    <a href="education.html" target="myFrame" class="link">Education</a>
-    <a href="personalDetails.html" target="myFrame" class="link">About me</a>
-    <br><br>
+        <ul>
+            <li><a href="home.html" target="myFrame" class="link">Home</a></li>
+            <li><a href="techStack.html" target="myFrame" class="link">Techstack</a></li>
+            <li><a href="projectDetails.html" target="myFrame" class="link">Project</a></li>
+            <li><a href="education.html" target="myFrame" class="link">Education</a></li>
+            <li><a href="personalDetails.html" target="myFrame" class="link">About me</a></li>
+        </ul>
+        
     </nav>
     <iframe width="1400" height="500" name="myFrame" src="home.html" frameborder="0"></iframe>
     <br>
     <footer>
-        <span>Follow me </span>
-        <a href="https://in.linkedin.com/" class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="https://www.google.com/" class="icon"><i class="fa fa-google" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/" class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://github.com/login" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <span>Follow me</span>
+            <ul>
+                <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/login"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
         <p>Copyright &copy;2023 Zoom video Communications, Inc. All Rights reserved.</p>
     </footer>
 </body>
