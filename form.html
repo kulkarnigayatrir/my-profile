@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        fieldset{
+            background-color: antiquewhite;
+        }
+        h2{
+            color: rgb(150, 12, 160);
+        }
+        h2,td{
+            font-family: 'Poppins', sans-serif;
+        }
+        .td1{
+            color: #4f0202;
+        }
+        .td2{
+            color: #851717;
+        }
+        input,button{
+            border-radius: 7px;
+            padding: 5px;
+            background-color: azure;
+            color: #851717;
+            font-weight: normal;
+            font-size: large;
+        }
+        input[type="text"]{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Employee Application Form</h2></legend>
+    <table>
+        <tbody>
+            <form>
+                <tr>
+                    <td class="td1"><label>First Name</label></td>
+                    <td class="td2"><input type="text" autofocus required placeholder="Only Capitals"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Last Name</label></td>
+                    <td class="td2"><input type="text" required placeholder="Only Caps"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Age</label></td>
+                    <td class="td2"><input type="number" required placeholder="Only age >= 18 all"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Name of your country</label></td>
+                    <td class="td2"><input type="text" value="India" readonly></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Email</label></td>
+                    <td class="td2"><input type="email" required placeholder="abc@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Password</label></td>
+                    <td class="td2"><input type="password"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Mobile no.</label></td>
+                    <td class="td2"><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Date of Birth</label></td>
+                    <td class="td2"><input type="date"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Select Available for discussion</td>
+                    <td class="td2"><input type="week"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Suitable Time</td>
+                    <td class="td2"><input type="time"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Select Gender</label></td>
+                    <td class="td2">
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                        <input type="radio" name="Gender">Other
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Technology Stack</td>
+                    <td class="td2">
+                        <input type="checkbox"><label>C</label>
+                        <input type="checkbox"><label>CPP</label>
+                        <input type="checkbox"><label>Java</label>
+                        <input type="checkbox"><label>Angular</label>
+                        <input type="checkbox"><label>React</label>
+                        <input type="checkbox"><label>DevOps</label>
+                        <input type="checkbox"><label>CI/CD Tools</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>photo</label></td>
+                    <td class="td2"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>documents</label></td>
+                    <td class="td2"><input type="file" multiple></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Select your state</label></td>
+                    <td class="td2">
+                        <select>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="AP">AP</option>
+                            <option value="UP">UP</option>
+                            <option value="Bihar">Bihar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1"><label>Address</label></td>
+                    <td class="td2"><textarea cols="50" rows="8" class="td2"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Register</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+    </fieldset>
+</body>
+</html>
